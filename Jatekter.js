@@ -21,9 +21,11 @@ class Jatekter {
             let aktElem = event.detail;
             if (this.#lepes % 2 === 0) {
                 aktElem.setElem("X");
+                aktElem.setSzín("red")
                 this.#lista[aktElem.getIndex()] = "X";
             } else {
                 aktElem.setElem("O");
+                aktElem.setSzín("pink")
                 this.#lista[aktElem.getIndex()] = "O";
             }
             this.#lepes++;
